@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下，你就知道</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body class="body-bg">
+    <div class="skin" id="skin">
+        <div class="skin-con">
+            <div class="skin-header">
+                <ul class="skin-nav">
+                    <li>热门</li>
+                    <li class="game">游戏</li>
+                    <li>卡通</li>
+                    <li>女神降临</li>
+                    <li>明星</li>
+                    <li>风景</li>
+                    <li>简约</li>
+                    <li>小清新</li>
+                    <li>自定义</li>
+                    <li>最近使用</li>
+                </ul>
+                <span class="bgs" id="bgs">背景透明度</span>
+                <div id="box">
+                    <div id="ads">
+                        <div id="text">0%</div>
+                        <div id="bt"></div>
+                    </div>
+                </div>
+                <div class="no-skin" id="no-skin">
+                    <span class="no-skin-ico"></span>
+                    <span>不使用皮肤</span>
+                </div>
+                <div class="close" id="close">
+                    <span class="close-ico"></span>
+                    <span>收起</span>
+                </div>
+            </div>
+            <ul class="game-list">
+                <li id="shouwang">守望先锋</li>
+                <li>魔兽世界</li>
+                <li>炉石传说</li>
+                <li>风暴英雄</li>
+                <li>暗黑破坏神Ⅲ</li>
+                <li>星际争霸Ⅱ</li>
+            </ul>
+            <ul class="skin-img" id="ski">
+                <li class="img-big img-all"><img class="ski" src="images/835.jpg"></li>
+                <li class="img-small img-all"><img class="ski" src="images/836.jpg"></li>
+                <li class="img-small img-all"><img class="ski" src="images/837.jpg"></li>
+                <li class="img-small img-all"><img class="ski" src="images/838.jpg"></li>
+                <li class="img-small img-all"><img class="ski" src="images/839.jpg"></li>
+                <li class="img-small img-all"><img class="ski" src="images/840.jpg"></li>
+                <li class="img-small img-all"><img class="ski" src="images/841.jpg"></li>
+                <li class="img-small img-all"><img class="ski" src="images/842.jpg"></li>
+                <li class="img-big img-all"><img class="ski" src="images/843.jpg"></li>
+                <li class="img-small img-all"><img class="ski" src="images/844.jpg"></li>
+                <li class="img-small img-all"><img class="ski" src="images/845.jpg"></li>
+                <li class="img-small img-all"><img class="ski" src="images/846.jpg"></li>
+                <li><span class="selected" id="selected"></span></li>
+            </ul>
+            <div class="auto-change">
+                <input type="checkbox" value="ture">开启自动换肤
+                <a href="http://vote.baidu.com/pae/component/page/overwatchactive?refer=005">不止有换肤哟！快搭乘传送门，体验超赞的“守望先锋”之旅吧！</a>
+            </div>
+            <div class="skin-perview-window">
+                <div class="skin-perview-top">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="skin-perview">
+                    <img src="images/839.jpg" id="pv">
+                    <img src="images/logo-perview.png" id="logo-perview">
+                </div>
+                <div class="skin-perview-bottom">背景皮肤效果预览</div>
+            </div>
+        </div>
+    </div>
+    <!-- 头部导航 begin -->
+    <div class="header" id="header">
+        <div class="nav-left">
+            <span>佛山：</span>
+            <img src="images/a1.png">
+            <span>16℃</span>
+            <span class="weather-grade">优</span>
+            <span>38 |</span>
+            <a href="">宝箱</a>
+            <span id="change-skin">换肤</span>
+            <a href="">消息</a>
+        </div>
+        <div class="nav-right">
+            <a href="">糯米</a>
+            <a href="">新闻</a>
+            <a href="">hao123</a>
+            <a href="">地图</a>
+            <a href="">视频</a>
+            <a href="">贴吧</a>
+            <div class="user">酒高还不错
+                <ul class="user-list">
+                    <li>我的VIP</li>
+                    <li>个人中心</li>
+                    <li>帐号设置</li>
+                    <li>意见反馈</li>
+                    <li>退出</li>
+                </ul>
+            </div>
+            <div class="setting">设置
+                <ul class="setting-list">
+                    <li>搜索设置</li>
+                    <li>高级搜索</li>
+                    <li>关闭预测</li>
+                    <li>搜索历史</li>
+                </ul>
+            </div>
+            <div class="more-product" id="more">更多产品
+                <ul class="product-list" id="more-list">
+                    <li>
+                        <a href=""><img src="images/music.png">
+                            <br>音乐</a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/image.png">
+                            <br>图片</a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/zhidao.png">
+                            <br>知道</a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/wenku.png">
+                            <br>文库></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/bang.png">
+                            <br>风云榜</a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/tuiguang.png">
+                            <br>百度推广</a>
+                    </li>
+                    <li><a href="">全部产品>></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 头部导航 end -->
+    <!-- 搜索框 begin -->
+    <div class="search">
+        <img id="logo" src="images/bd_logo1.png" alt="百度一下" />
+        <form action="https://www.baidu.com/s" method="get" target="_blank">
+            <input type="text" name="wd" autofocus="autofocus">
+            <button type="submit">百度一下</button>
+        </form>
+    </div>
+    <!-- 搜索框 end -->
+    <!-- 主体内容 begin -->
+    <div class="content">
+        <ul class="content-list">
+            <li id="follow"><span class="user-ico"></span>我的关注</li>
+            <li class="content-selected">推荐</li>
+            <li>导航</li>
+            <li>视频</li>
+            <li>购物</li>
+            <li>体育</li>
+            <span class="content-set"></span>
+        </ul>
+        <div class="content-main">
+            <h4>我的导航</h4>
+            <h4>我的小说</h4>
+            <h4>自定义</h4>
+        </div>
+        <div class="content-main" id="main-selected">
+            <div class="content-tip" >以下信息根据你的兴趣推荐</div>
+            <section class="section-list">
+                <div class="section-img-con">
+                    <img src="images/u=1896636402,692037418&fm=80&w=179&h=119&img.JPEG" alt="">
+                </div>
+                <div class="section-header">
+                    <h2>十大语文差错揭晓 评选标准：是典型性、新闻性和广泛性</h2>
+                    <div class="section-info">
+                        <a href="http://d.youth.cn/">中国青年网</a> 12-23 09:17
+                        <span class="hot-news">热点</span>
+                    </div>
+                </div>
+                <div class="section-img-con">
+                    <img src="images/u=1177572364,2569784617&fm=80&w=179&h=119&img.JPEG" alt="">
+                </div>
+                <div class="section-header">
+                    <h2>韩国F-15战机新导弹正式亮相 弹体现四字中文</h2>
+                    <div class="section-info">
+                        <a href="http://mil.sohu.com/">搜狐军事</a> 12-23 10:55
+                        <span class="hot-news">热点</span>
+                    </div>
+                </div>
+            </section>
+            <div class="hot-points">
+                <span class="hot-header">实时热点</span>
+                <span class="hot-change"><span class="change-ico"></span>换一换</span>
+                <br>
+                <a href="">特大跨省传销宣判</a>
+                <a href="">载118人客机遭劫</a>
+                <a href="">直播自慰被判刑</a>
+                <a href="">僵尸车被塞进假人</a>
+                <a href="">大雁塔拍裸体写真</a>
+                <a href="">120嫌病人太重</a>
+                <a href="">一夜将现千万富豪</a>
+                <a href="">景甜回应背景说</a>
+                <a href="">夫妻让交警叫爸爸</a>
+                <a href="">女子买衣欠款6万</a>
+                <a href="">求婚玫瑰被炒成酱</a>
+                <a href="">20亿年最古老水</a>
+                <a href="">半夜开震楼器</a>
+                <a href="">小学生群卖黄片</a>
+                <a href="">王祖蓝为妹妹买房</a>
+                <a href="">王思聪调侃李易峰</a>
+            </div>
+        </div>
+        <div class="content-main">
+            <h4>猜你喜欢</h4>
+            <ul class="content-nav">
+                <li><img src="images/9483.png"><a href="#">百度糯米</a></li>
+                <li><img src="images/95541.png"><a href="#">京东商城</a></li>
+                <li><img src="images/95780.png"><a href="#">1号店</a></li>
+                <li><img src="images/95537.png"><a href="#">苏宁易购</a></li>
+                <li><img src="images/95693.png"><a href="#">唯品会</a></li>
+                <li><img src="images/95517.png"><a href="#">当当网</a></li>
+                <li><img src="images/6000.png"><a href="#">一些网站</a></li>
+                <li><img src="images/6000.png"><a href="#">一些网站</a></li>
+                <li><img src="images/6000.png"><a href="#">一些网站</a></li>
+                <li><img src="images/6000.png"><a href="#">一些网站</a></li>
+                <li><img src="images/6000.png"><a href="#">一些网站</a></li>
+                <li><img src="images/6000.png"><a href="#">一些网站</a></li>
+                <li><img src="images/6000.png"><a href="#">一些网站</a></li>
+                <li><img src="images/6000.png"><a href="#">一些网站</a></li>
+                <li><img src="images/6000.png"><a href="#">一些网站</a></li>
+                <li><img src="images/6000.png"><a href="#">一些网站</a></li>
+                <li><img src="images/6000.png"><a href="#">一些网站</a></li>
+                <li><img src="images/6000.png"><a href="#">一些网站</a></li>
+                <li><img src="images/6000.png"><a href="#">一些网站</a></li>
+                <li><img src="images/6000.png"><a href="#">一些网站</a></li>
+                <li><img src="images/6000.png"><a href="#">一些网站</a></li>
+                <li><img src="images/6000.png"><a href="#">一些网站</a></li>
+                <li><img src="images/6000.png"><a href="#">一些网站</a></li>
+                <li><img src="images/6000.png"><a href="#">一些网站</a></li>
+            </ul>
+        </div>
+        <div class="content-main content-video">
+            <img src="images/u=2349281914,478733641&fm=58.jpg" alt="">
+            <img src="images/u=811283168,1459770220&fm=58.jpg" alt="">
+            <img src="images/u=4196145087,2149093104&fm=58.jpg" alt="">
+            <img src="images/u=1265132961,3024368241&fm=58.jpg" alt="">
+            <img src="images/u=2415642232,4060981612&fm=58.jpg" alt="">
+            <img src="images/u=969893924,3385311952&fm=58.jpg" alt="">
+        </div>
+        <div class="content-main content-shopping">
+            <img src="images/4e4a20a4462309f7fa36516e7b0e0cf3d7cad675.jpg" alt="">
+            <img src="images/f2deb48f8c5494ee299d886524f5e0fe99257e0b.jpg" alt="">
+            <img src="images/0df431adcbef7609f2581ee327dda3cc7cd99e7f.jpg" alt="">
+            <img src="images/4e4a20a4462309f7fa36516e7b0e0cf3d7cad675.jpg" alt="">
+        </div>
+        <div class="content-main content-sport">
+            <img src="images/d6ca7bcb0a46f21f72f0042fff246b600d33ae82.jpg" alt="">
+        </div>
+    </div>
+    <!-- 主体内容 end -->
+    <div class="footer">
+        <a href="#">设为首页</a>
+        &copyright2016 Baidu
+        <a href="#">使用百度前必读</a>
+        <a href="#">意见反馈</a>
+        京ICP证030173号<br>
+        <a href="#">京公网安备11000002000001号</a>
+    </div>
+</body>
+
+</html>
