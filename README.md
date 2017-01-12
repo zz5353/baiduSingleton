@@ -1,0 +1,2 @@
+# baiduSingleton
+baiduSingleton
